@@ -1,3 +1,8 @@
+## Test lists
+evennums = [2,4,6,8,10]
+oddnums = [1,3,5,7,9]
+nums = [0,1,2,3,4,5,6,7,8,9]
+
 ## Power
 def power(number, power):
     try:
@@ -32,6 +37,21 @@ def multiply(number, times):
                 numlist.append(number[i] * times)
             # Return the list of results
             return numlist
+    except:
+        # Handle the case where an exception occurs (e.g., non-numeric input)
+        print("Enter a numeric value!")
+
+## Division
+def division(number, divisor):
+    try:
+        # Check if the divisor is not equal to zero
+        if divisor != 0:
+            # Use the multiply function to divide the number by the divisor
+            # by multiplying the number with the reciprocal of the divisor (divisor raised to the power of -1)
+            return multiply(number, power(divisor, -1))
+        else:
+            # Handle the case where the divisor is zero and print an error message
+            return print("Cannot Divide by Zero!")
     except:
         # Handle the case where an exception occurs (e.g., non-numeric input)
         print("Enter a numeric value!")
