@@ -40,3 +40,27 @@ def multiply(number, times):
     except:
         # Handle the case where an exception occurs (e.g., non-numeric input)
         print("Enter a numeric value!")
+
+## Division
+def divide(number, divisor):
+    try:
+        # Check if the divisor is zero
+        if divisor == 0:
+            # Handle the case of division by zero and print "Infinity"
+            return print("Infinity")
+        else:
+            # Check if the type of the input number is either int or float
+            if type(number) == (type(1) or type(1.1)):
+                # If so, perform division and return the result
+                return number / divisor
+            else:
+                # If the type is not int or float, create a list to store results for each element in the input number
+                numlist = []
+                for i in number:
+                    # Divide each element by the divisor and append the result to the list
+                    numlist.append(i / divisor)
+                # Return the list of results
+                return numlist
+    except ValueError:
+        # Handle the case where an exception occurs (e.g., non-numeric input)
+        print("Enter a numeric value!")
