@@ -80,3 +80,24 @@ def mean(lst):
     except ValueError:
         # Handle the case where an exception occurs (e.g., non-numeric elements in the list)
         print("The provided list isn't numeric")
+
+## Sum all
+def sumall(lst):
+    try:
+        # Check if all elements in the list are either int or float
+        for i in lst:
+            if type(i) not in (int, float):
+                return print("The provided list isn't numeric")
+        
+        # If all elements are numeric, initialize a variable to store the sum of the elements in the list
+        total = 0
+        # Iterate through each element in the list and add it to the total
+        for i in lst:
+            total += i
+        
+        # Return the total sum
+        return total
+        
+    except ValueError:
+        # Handle the case where an exception occurs (e.g., non-numeric elements in the list)
+        print("The provided list isn't numeric")
