@@ -101,3 +101,12 @@ def sumall(lst):
     except ValueError:
         # Handle the case where an exception occurs (e.g., non-numeric elements in the list)
         print("The provided list isn't numeric")
+
+class science:
+def force(mass, acceleration):
+    try:
+        # Calculate force using Newton's second law: force = mass * acceleration
+        return mass * acceleration
+    except ValueError:
+        # Handle the case where an exception occurs due to non-numeric values
+        print("Enter Numeric Values!")
