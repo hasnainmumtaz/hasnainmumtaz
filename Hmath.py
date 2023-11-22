@@ -64,3 +64,19 @@ def divide(number, divisor):
     except ValueError:
         # Handle the case where an exception occurs (e.g., non-numeric input)
         print("Enter a numeric value!")
+
+## Mean
+def mean(lst):
+    try:
+        # Get the length of the list
+        length = len(lst)
+        # Initialize a variable to store the sum of the elements in the list
+        total = 0
+        # Iterate through each element in the list and add it to the total
+        for i in lst:
+            total += i
+        # Calculate and return the mean by dividing the total by the length
+        return total / length
+    except ValueError:
+        # Handle the case where an exception occurs (e.g., non-numeric elements in the list)
+        print("The provided list isn't numeric")
