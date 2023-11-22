@@ -17,3 +17,21 @@ def power(number, power):
         # Handle the case where an exception occurs (e.g., non-numeric input)
         print("Enter a numeric value!")
 
+## Multiply
+def multiply(number, times):
+    try:
+        # Check if the type of the input number is either int or float
+        if type(number) == (type(1) or type(1.1)):
+            # If so, multiply the number by the specified times and return the result
+            return number * times
+        else:
+            # If the type is not int or float, create a list to store results for each element in the range of the input number
+            numlist = []
+            for i in range(len(number)):
+                # Multiply each element by the specified times and append the result to the list
+                numlist.append(number[i] * times)
+            # Return the list of results
+            return numlist
+    except:
+        # Handle the case where an exception occurs (e.g., non-numeric input)
+        print("Enter a numeric value!")
