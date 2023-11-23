@@ -102,11 +102,56 @@ def sumall(lst):
         # Handle the case where an exception occurs (e.g., non-numeric elements in the list)
         print("The provided list isn't numeric")
 
-class science:
-def force(mass, acceleration):
+## Quadratic
+def quadratic(a, b, c):
     try:
-        # Calculate force using Newton's second law: force = mass * acceleration
-        return mass * acceleration
+        # Check if 'a' is not zero (ensuring it's a quadratic equation)
+        if a != 0:
+            # Calculate the discriminant
+            discriminant = power(b, 2) - 4 * a * c
+            
+            # Check if the discriminant is non-negative
+            if discriminant >= 0:
+                # Calculate the two possible outcomes using the quadratic formula
+                outcomeOne = (-b + power(discriminant, 0.5)) / (2 * a)
+                outcomeTwo = (-b - power(discriminant, 0.5)) / (2 * a)
+                
+                # Check if both outcomes are equal
+                if outcomeOne == outcomeTwo:
+                    return outcomeOne
+                else:
+                    return outcomeOne, outcomeTwo
+            else:
+                # Handle the case where the discriminant is negative (no real roots)
+                print("No real roots")
+        else:
+            # Handle the case where 'a' is zero (not a quadratic equation)
+            print("'a' must be non-zero for a quadratic equation")
     except ValueError:
-        # Handle the case where an exception occurs due to non-numeric values
-        print("Enter Numeric Values!")
+        # Handle the case where an exception occurs (e.g., invalid input values)
+        print("Input Invalid")
+
+## Pythagorean theorem
+def pythagorean(a, b, c):
+    try:
+        # Check if two out of three values are provided
+        check = [a, b, c]
+        count = 0 
+        for i in check:
+            if type(i) in (int, float):
+                count += 1
+        
+        if count == 2:
+            # Check which value is missing and calculate it using the Pythagorean theorem
+            if c is None:
+                return power(power(a, 2) + power(b, 2), 0.5)
+            elif b is None:
+                return power(power(c, 2) - power(a, 2), 0.5)
+            elif a is None:
+                return power(power(c, 2) - power(b, 2), 0.5)
+        else:
+            # Handle the case where the input does not meet the conditions
+            print("Enter 2 numbers and None value only!")
+    except:
+        # Handle the case where an exception occurs (e.g., unexpected issues)
+        print("Something went wrong!")
