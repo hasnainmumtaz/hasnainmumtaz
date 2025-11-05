@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hasnain Naqvi - Generalist Portfolio">
+    <title>Hasnain Naqvi - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">HM</a>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Hasnain Naqvi</span></h1>
+            <p class="hero-subtitle">Generalist & Problem Solver</p>
+            <p class="hero-description">Exploring the intersection of technology, business, and design</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    I'm a generalist passionate about solving problems across disciplines. With experience spanning 
+                    Product Management, Computer Science, and Business, I bring a diverse perspective to every project. 
+                    I enjoy working at the intersection of technology and strategy, whether that's building products, 
+                    analyzing data, or collaborating with cross-functional teams.
+                </p>
+                <p class="about-text">
+                    As a generalist, I thrive on learning new domains and connecting ideas across different fields. 
+                    I'm equally comfortable diving into technical challenges, thinking through product strategy, 
+                    or exploring business opportunities. I'm always eager to collaborate and learn from diverse 
+                    perspectives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">ImageMania</h3>
+                    <p class="project-description">
+                        A powerful reverse image search application that connects to Shopify stores to find similar products 
+                        using AI-powered image embeddings. Features a FastAPI backend with local storage for persistent caching 
+                        and a modern Streamlit frontend. Includes smart caching, multi-store support, and real-time similarity matching.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">FastAPI</span>
+                        <span class="project-tag">Streamlit</span>
+                        <span class="project-tag">CLIP</span>
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Shopify</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/hasnainmumtaz/ImageMania" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">TodoPlus</h3>
+                    <p class="project-description">
+                        A modern, full-featured hierarchical todo list web application built with Next.js and SQLite. Features 
+                        include nested tasks with parent-child relationships, cascade operations for completion and deletion, 
+                        AI-powered summary generation using OpenAI API, user authentication, and a clean, intuitive interface. 
+                        Includes comprehensive API documentation and automated testing.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Next.js</span>
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Authentication</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/hasnainmumtaz/todoplus" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">StageMind</h3>
+                    <p class="project-description">
+                        An AI-powered communication training tool designed to help users practice and improve their communication 
+                        skills through realistic simulations. Provides interactive scenarios and feedback to enhance professional 
+                        communication abilities.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Communication</span>
+                        <span class="project-tag">Training</span>
+                        <span class="project-tag">Simulation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/All4Nothing/StageMind" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <a href="mailto:naqvi@uni.minerva.edu" class="footer-link">
+                        <svg class="footer-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        naqvi@uni.minerva.edu
+                    </a>
+                    <a href="https://www.linkedin.com/in/shmn" target="_blank" class="footer-link">
+                        <svg class="footer-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+                <p class="footer-copyright">&copy; <span id="current-year"></span> Hasnain Naqvi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
