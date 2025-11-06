@@ -36,7 +36,6 @@ An AI-powered communication training tool designed to help users practice and im
 
 - 📧 Email: [naqvi@uni.minerva.edu](mailto:naqvi@uni.minerva.edu)
 - 💼 LinkedIn: [linkedin.com/in/shmn](https://www.linkedin.com/in/shmn)
-- 🌐 Portfolio: Check out my [portfolio website](https://hasnainmumtaz.github.io) (if hosted)
 
 ## Looking to Collaborate
 
